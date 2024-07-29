@@ -83,20 +83,20 @@ wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Task
 - Now visit [Testnet Website](https://www.swisstronik.com/testnet2/dashboard) to Submit `Contract address`, `Transaction hash Link` and `Github Repository Link`
 
 - ## Mint Proxy
----
-- Now go to `[Github](https://github.com)
-- Create a repository and name it `Swisstronik Proxy` and copy the repository link and save it somewhere
-- Make sure you are creating this repository from the github account which is authorised to `Gitpod`
----
-- Now go back to [Gitpod](https://gitpod.io/workspaces)
-- Paste your copied `Github Repository` link and configure
+- 
+- Now to [Github CodeSpace](https://github.com/codespaces)
+- Select > Blank Templates
 - Paste the below command in terminal
 ```bash
 wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Tasks/main/proxy.sh && chmod +x proxy.sh && ./proxy.sh
 ```
-`ENTER` , `ENTER` , `Y` , `PRIVATE kEY` , `NAME` , `SYMBLE` & Copy Contract deployed Address & Transaction hash Link
+`ENTER` , `ENTER` , `Y` , `PRIVATE kEY`
+Copy > Non-proxy Swisstronik deployed Address
+Copy > Deployment transaction hash Link
+Copy > Proxy Swisstronik deployed Address
+Copy > Deployment transaction hash Link
 
-- Now visit [Testnet Website](https://www.swisstronik.com/testnet2/dashboard) to Submit `Contract address`, `Transaction hash Link` and `Github Repository Link`
+- Now Go To [Testnet Website](https://www.swisstronik.com/testnet2/dashboard) to Submit `Contract address`, `Transaction hash Link`
 
 
 # ▄︻デ𝙂𝙚𝙩 𝙇𝙖𝙩𝙚𝙨𝙩 𝘼𝙞𝙧𝙙𝙧𝙤𝙥𝙨 & 𝙐𝙥𝙙𝙖𝙩𝙚𝙨═━一
