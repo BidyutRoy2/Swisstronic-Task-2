@@ -211,8 +211,6 @@ echo "Running getMessage.js..."
 npx hardhat run scripts/getMessage.js --network swisstronik
 echo "Message retrieved."
 
-rm -f .env
-
 echo
 print_green "Copy the above Tx URL and save it somewhere, you need to submit it on Testnet page"
 echo
