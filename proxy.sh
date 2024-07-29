@@ -25,64 +25,45 @@ echo "Installing dependencies..."
 npm install --save-dev hardhat
 npm install dotenv
 npm install @swisstronik/utils
+npm install @openzeppelin/hardhat-upgrades
 npm install @openzeppelin/contracts
+npm install @nomicfoundation/hardhat-toolbox
 echo "Installation completed."
 
-print_blue "Installing Hardhat and necessary dependencies..."
-echo
-npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
-echo
-
-print_blue "Removing default package.json file..."
-echo
-rm package.json
-echo
-
-print_blue "Creating package.json file again..."
-echo
-cat <<EOL > package.json
-{
-  "name": "hardhat-project",
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
-    "hardhat": "^2.17.1"
-  },
-  "dependencies": {
-    "@openzeppelin/contracts": "^5.0.0",
-    "@swisstronik/utils": "^1.2.1"
-  }
-}
-EOL
-
-print_blue "Initializing Hardhat project..."
+echo "Creating a Hardhat project..."
 npx hardhat
-echo
-print_blue "Removing the default Hardhat configuration file..."
-echo
-rm hardhat.config.js
-echo
-read -p "Enter your wallet private key: " PRIVATE_KEY
 
-if [[ $PRIVATE_KEY != 0x* ]]; then
-  PRIVATE_KEY="0x$PRIVATE_KEY"
-fi
+rm -f contracts/Lock.sol
+echo "Lock.sol removed."
 
+echo "Hardhat project created."
+
+echo "Installing Hardhat toolbox..."
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+echo "Hardhat toolbox installed."
+
+echo "Creating .env file..."
+read -p "Enter your private key: " PRIVATE_KEY
+echo "PRIVATE_KEY=$PRIVATE_KEY" > .env
+echo ".env file created."
+
+echo "Configuring Hardhat..."
 cat <<EOL > hardhat.config.js
 require("@nomicfoundation/hardhat-toolbox");
+require('@openzeppelin/hardhat-upgrades');
+require("dotenv").config();
 
 module.exports = {
   solidity: "0.8.20",
   networks: {
     swisstronik: {
       url: "https://json-rpc.testnet.swisstronik.com/",
-      accounts: ["$PRIVATE_KEY"],
+      accounts: [\`0x\${process.env.PRIVATE_KEY}\`],
     },
   },
 };
 EOL
-
-print_blue "Hardhat configuration file has been updated."
-echo
+echo "Hardhat configuration completed."
 
 echo "Creating Hello_swtr.sol contract..."
 mkdir -p contracts
@@ -233,9 +214,9 @@ echo "Message retrieved."
 echo
 print_green "Copy the above Tx URL and save it somewhere, you need to submit it on Testnet page"
 echo
-sed -i 's/0x[0-9a-fA-F]*,\?\s*//g' hardhat.config.js
+sed -i 's/0x[0-9a-fA-F]*,\?\s*//g' .env
 echo
-print_blue "PRIVATE_KEY has been removed from hardhat.config.js."
+print_blue "PRIVATE_KEY has been removed from .env."
 echo
 print_blue "Pushing these files to your github Repo link"
 git add . && git commit -m "Initial commit" && git push origin main
