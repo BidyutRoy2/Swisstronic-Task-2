@@ -76,7 +76,7 @@ wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Task-3/main/erc721
 - Paste your copied `Github Repository` link and configure
 - Paste the below command in terminal
 ```bash
-https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Tasks/main/perc721.sh && chmod +x perc721.sh && ./perc721.sh
+wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Tasks/main/perc721.sh && chmod +x perc721.sh && ./perc721.sh
 ```
 `ENTER` , `ENTER` , `Y` , `PRIVATE kEY` , `NAME` , `SYMBLE` & Copy Contract deployed Address & Transaction hash Link
 
@@ -92,7 +92,7 @@ https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Tasks/mai
 - Paste your copied `Github Repository` link and configure
 - Paste the below command in terminal
 ```bash
-https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Tasks/main/proxy.sh && chmod +x proxy.sh && ./proxy.sh
+wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Tasks/main/proxy.sh && chmod +x proxy.sh && ./proxy.sh
 ```
 `ENTER` , `ENTER` , `Y` , `PRIVATE kEY` , `NAME` , `SYMBLE` & Copy Contract deployed Address & Transaction hash Link
 
