@@ -33,7 +33,7 @@ wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Task-2/main/erc20-
 ## Mint ERC721 Token
 ---
 - Now go to `[Github](https://github.com)
-- Create a repository and name it `Swisstronik ERC20` and copy the repository link and save it somewhere
+- Create a repository and name it `Swisstronik ERC721` and copy the repository link and save it somewhere
 - Make sure you are creating this repository from the github account which is authorised to `Gitpod`
 ---
 - Now go back to [Gitpod](https://gitpod.io/workspaces)
@@ -49,7 +49,7 @@ wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Task-3/main/erc721
 - ## Mint Perc721 Token
 ---
 - Now go to `[Github](https://github.com)
-- Create a repository and name it `Swisstronik ERC20` and copy the repository link and save it somewhere
+- Create a repository and name it `Swisstronik Perc721` and copy the repository link and save it somewhere
 - Make sure you are creating this repository from the github account which is authorised to `Gitpod`
 ---
 - Now go back to [Gitpod](https://gitpod.io/workspaces)
@@ -65,7 +65,7 @@ https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Task-2/main/perc721.sh 
 - ## Mint Proxy
 ---
 - Now go to `[Github](https://github.com)
-- Create a repository and name it `Swisstronik ERC20` and copy the repository link and save it somewhere
+- Create a repository and name it `Swisstronik Proxy` and copy the repository link and save it somewhere
 - Make sure you are creating this repository from the github account which is authorised to `Gitpod`
 ---
 - Now go back to [Gitpod](https://gitpod.io/workspaces)
