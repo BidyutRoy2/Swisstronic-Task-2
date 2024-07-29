@@ -83,7 +83,6 @@ wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Task
 - Now visit [Testnet Website](https://www.swisstronik.com/testnet2/dashboard) to Submit `Contract address`, `Transaction hash Link` and `Github Repository Link`
 
 - ## Mint Proxy
-- 
 - Now to [Github CodeSpace](https://github.com/codespaces)
 - Select > Blank Templates
 - Paste the below command in terminal
