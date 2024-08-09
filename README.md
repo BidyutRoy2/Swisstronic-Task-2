@@ -97,7 +97,7 @@ Copy > Deployment transaction hash Link
 
 - Now Go To [Testnet Website](https://www.swisstronik.com/testnet2/dashboard) to Submit `Contract address`, `Transaction hash Link`
 
-## Minting PERC20 Token Script
+## Mint PERC20
 - First, open [Gitpod](https://gitpod.io/workspaces)
 - Click on ur potfile dp in the corner
 - Click on `User Settings` - `Git Provider`
