@@ -97,6 +97,33 @@ Copy > Deployment transaction hash Link
 
 - Now Go To [Testnet Website](https://www.swisstronik.com/testnet2/dashboard) to Submit `Contract address`, `Transaction hash Link`
 
+## Minting PERC20 Token Script
+- First, open [Gitpod](https://gitpod.io/workspaces)
+- Click on ur potfile dp in the corner
+- Click on `User Settings` - `Git Provider`
+- Here in the github section u will see ur authorised github account username
+- Click on the `3 dot` in the end of `Github` and then Click on `Edit Permission`
+- Enable `public_repo` option then click on `Update Permissions`
+---
+- Now visit : `Variables` section, Click on `New Variables`
+- Write `PRIVATE_KEY` in the `Name` section
+- Write your private key in the `Value` section
+- Write `*/*` in the `Scope` section
+---
+- Now go to [Github](https://github.com/)
+- Create a repository and name it `Swisstronik 4` and copy the repository link and save it somewhere
+- Make sure you are creating this repository from the github account which is authorised to `Gitpod`
+---
+- Now go back to [Gitpod](https://gitpod.io/workspaces)
+- Paste your copied `Github Repository` link and configure
+- If it take more than the usual time, you should try this on Incognito tab
+- Make sure to request $SWTR Faucet from [this site](https://faucet.testnet.swisstronik.com/)
+- Paste the below command in terminal
+```bash
+wget https://raw.githubusercontent.com/BidyutRoy2/Swisstronic-Technical-All-Tasks/main/proxy.sh && chmod +x perc20.sh && ./perc20.sh
+```
+- Now visit [Testnet Website](https://www.swisstronik.com/testnet2/dashboard) to submit your Token `Contract address`, `Minting Hash` and `Github Repository Link`
+
 
 # ▄︻デ𝙂𝙚𝙩 𝙇𝙖𝙩𝙚𝙨𝙩 𝘼𝙞𝙧𝙙𝙧𝙤𝙥𝙨 & 𝙐𝙥𝙙𝙖𝙩𝙚𝙨═━一
 
